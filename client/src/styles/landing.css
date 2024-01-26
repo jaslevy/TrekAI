@@ -28,9 +28,9 @@
 }
 
 .img1-container {
-    width: 70%;
-    height: 500px; /* Set a fixed height to crop the image */
-    margin-top: 30px;
+    width: 65%;
+    height: 570px; /* Set a fixed height to crop the image */
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden; /* Hide the part of the image that overflows */
@@ -43,4 +43,40 @@
     height: 100%; /* Make the image fill the container */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     display: block;
+}
+
+.overlay-text {
+    position: absolute; /* Position the text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -10%); /* Adjust the exact center */
+    color: white; /* White text */
+    font-size: 32px; /* Adjust as needed */
+    font-weight: 700;
+    text-align: center; /* Ensure text is centered */
+    /* Additional styling as needed */
+}
+
+.button-container {
+    position: absolute;
+    top: 70%; /* Adjust this value as needed to position below the text */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; /* To layout buttons horizontally */
+    gap: 30px; /* Space between buttons */
+}
+  
+.button-style {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    padding: 15px 30px; /* Adjust padding as needed */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: 800;
+}
+  
+.button-style:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
 }

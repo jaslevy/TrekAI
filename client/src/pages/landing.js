@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../images/TREK AI LOGO.svg'
-import img1 from '../images/4096px-Dark_mountain_panorama.jpg'
+import img1 from '../images/Hills_and_mountains_in_autumn_(Unsplash).jpg'
 import '../styles/landing.css'
 function Landing() {
     const [word, setWord] = useState('');
@@ -45,7 +45,12 @@ function Landing() {
             </div>
             <div class="catchphrase"> Your trail, {word}</div>
             <div class="img1-container">
-                <img src={img1} alt="" width="800"/>
+                <img src={img1} alt=""/>
+                <div className="overlay-text">Embark on unforgettable journeys with TrekAI: your personal guide to the world's most breathtaking trails, customized to fit your budget and hiking dreams. Where your next adventure awaits, tailored just for you.</div>
+                <div className="button-container">
+                    <button className="button-style">Log in</button>
+                    <button className="button-style">Sign up</button>
+                </div>
             </div>
         </body>
     );
