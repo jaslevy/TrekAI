@@ -1,0 +1,8 @@
+.landing-top-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 100vh;           /* Take full viewport height */
+  margin-top: 0;           /* Ensure no margin at the top */
+}
+
