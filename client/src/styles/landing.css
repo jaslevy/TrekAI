@@ -17,6 +17,14 @@
     font-weight: 800;
 }
 
+.subtitles {
+    margin-top: 50px; /* Space between logo and catchphrase */
+    margin-bottom: 50px; /* Space between logo and catchphrase */
+    text-align: center;
+    font-size: 40px;      
+    font-weight: 800;
+}
+
 .catchphrase::after {
     content: '|';
     opacity: 1;
@@ -35,7 +43,7 @@
     margin-right: auto;
     overflow: hidden; /* Hide the part of the image that overflows */
     border-radius: 15px; /* Rounded corners */
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .img1-container img {
@@ -80,3 +88,97 @@
 .button-style:hover {
     background-color: #f0f0f0; /* Slightly darker background on hover */
 }
+@media (max-width: 768px) {
+    .img1-container {
+        width: 90%; /* Increase width for smaller screens */
+        height: 20%; /* Adjust height to maintain aspect ratio */
+        margin-top: 20px;
+    }
+    .overlay-text {
+        font-size: 14px; /* Smaller font size for smaller screens */
+        transform: translate(-50%, -90%); /* Adjust positioning */
+    }
+
+    .button-container {
+        top: 53%; /* Adjust positioning for smaller screens */
+        gap: 10px; /* Smaller gap between buttons */
+    }
+
+    .button-style {
+        padding: 5px 10px; /* Smaller padding for smaller buttons */
+        font-size: 8px; /* Smaller font size */
+    }
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+    margin-bottom: 60px; 
+}
+.typing-demo {
+    margin: 20px; /* Add margins around the paragraph */
+    text-align: justify; /* Justify the text for a clean look */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.6; /* Adjust line height for better readability */
+    font-family: courier;
+    font-size: 1em;
+    text-align: left;
+    font-weight: 800;
+    white-space: pre-wrap; /* Allows text to wrap and respects line breaks */
+}
+  
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; } /* Ensure it matches the width of .typing-demo */
+}
+  
+.inputs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 15px;
+    border-radius: 15px; /* Rounded edges for the outer container */
+    background-color: white; /* White background for the outer container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  }
+  
+.input-container {
+    display: flex;
+    align-items: center;
+}
+  
+.input-description {
+    margin-right: 10px;
+    color: #333; /* Text color for the description */
+    font-size: 16px;
+}
+  
+.fake-input {
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded edges for each fake input */
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Text color */
+    font-size: 16px;
+    margin-right: 10px; /* Space between input and the next description */
+}
+  
+.go-button {
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded button edges */
+    background-color: black; /* Black button */
+    color: white; /* White text */
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+  
+.go-button:hover {
+    background-color: #333; /* Slightly darker on hover */
+}
+
+.output-wrapper {
+    height: 40%
+}
+  
