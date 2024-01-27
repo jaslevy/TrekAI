@@ -117,10 +117,11 @@
     margin-bottom: 60px; 
 }
 .typing-demo {
-    margin: 20px; /* Add margins around the paragraph */
-    text-align: justify; /* Justify the text for a clean look */
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.6; /* Adjust line height for better readability */
+    margin: 20px; 
+    text-align: justify; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    height: 325px; /* Fixed height for the typing area */
     font-family: courier;
     font-size: 1em;
     text-align: left;
@@ -178,7 +179,4 @@
     background-color: #333; /* Slightly darker on hover */
 }
 
-.output-wrapper {
-    height: 40%
-}
   

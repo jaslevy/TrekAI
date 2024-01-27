@@ -81,30 +81,28 @@ function Landing() {
                 </div>
             </div>
             <div className="subtitles"> Plan your trip in seconds with AI</div>
-            <div className="output-wrapper">
-                <div className="inputs-wrapper">
-                    <div className="input-container">
-                        <span className="input-description">Destination:</span>
-                        <div className="fake-input">Nagano, Japan</div>
-                    </div>
-                    <div className="input-container">
-                        <span className="input-description">Budget (USD):</span>
-                        <div className="fake-input">$3000</div>
-                    </div>
-                    <div className="input-container">
-                        <span className="input-description">Duration (days):</span>
-                        <div className="fake-input">21</div>
-                    </div>
-                    <div className="input-container">
-                        <span className="input-description">Month:</span>
-                        <div className="fake-input">August</div>
-                    </div>
-                    <button className="go-button">Go</button>
+            <div className="inputs-wrapper">
+                <div className="input-container">
+                    <span className="input-description">Destination:</span>
+                    <div className="fake-input">Nagano, Japan</div>
                 </div>
-                <div className="wrapper">
-                    <div className="typing-demo" ref={typingDemoRef}>
-                        {displayedText}
-                    </div>
+                <div className="input-container">
+                    <span className="input-description">Budget (USD):</span>
+                    <div className="fake-input">$3000</div>
+                </div>
+                <div className="input-container">
+                    <span className="input-description">Duration (days):</span>
+                    <div className="fake-input">21</div>
+                </div>
+                <div className="input-container">
+                    <span className="input-description">Month:</span>
+                    <div className="fake-input">August</div>
+                </div>
+                <button className="go-button">Go</button>
+            </div>
+            <div className="wrapper">
+                <div className="typing-demo" ref={typingDemoRef}>
+                    {displayedText}
                 </div>
             </div>
             <div className="subtitles">Interact with Your Itinerary</div>
