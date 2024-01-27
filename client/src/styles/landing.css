@@ -179,4 +179,15 @@
     background-color: #333; /* Slightly darker on hover */
 }
 
-  
+.map-container {
+    width: 65%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; /* Hide the part of the image that overflows */
+    border-radius: 15px; /* Rounded corners */
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}

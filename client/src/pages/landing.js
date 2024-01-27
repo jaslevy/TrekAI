@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import logo from '../images/TREK AI LOGO.svg'
 import img1 from '../images/Hills_and_mountains_in_autumn_(Unsplash).jpg'
+import map from '../images/Group 4.png'
 import '../styles/landing.css'
 function Landing() {
      // Catchphrase typing effect states
@@ -105,7 +106,10 @@ function Landing() {
                     {displayedText}
                 </div>
             </div>
-            <div className="subtitles">Interact with Your Itinerary</div>
+            <div className="subtitles">Interact With Your Itinerary</div>
+            <div className="map-container">
+                <img src={map} alt="TREKAI LOGO" width="800" height="auto" />
+            </div>
         </body>
     );
 }
