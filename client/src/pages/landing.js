@@ -74,7 +74,7 @@ function Landing() {
             </div>
             <div className="catchphrase"> Your trail, {catchphrase}</div>
             <div className="img1-container">
-                <img src={img1} alt="" />
+                <img src={img1} alt="backdrop" />
                 <div className="overlay-text">Embark on unforgettable journeys with TrekAI: your personal guide to the world's most breathtaking trails, customized to fit your budget and hiking dreams. Where your next adventure awaits, tailored just for you.</div>
                 <div className="button-container">
                     <button className="button-style">Log in</button>
@@ -108,7 +108,14 @@ function Landing() {
             </div>
             <div className="subtitles">Interact With Your Itinerary</div>
             <div className="map-container">
-                <img src={map} alt="TREKAI LOGO" width="800" height="auto" />
+                <img src={map} alt="TREKAI MAP" width="800" height="auto" />
+            </div>
+            <div className="subtitles">Adventure Awaits</div>
+            <div className="grid-container">
+                <div className="grid-item text-item">Text for Item 1</div>
+                <div className="grid-item photo-item"><img src={map} alt="Description 1" /></div>
+                <div className="grid-item photo-item"><img src={map} alt="Description 2" /></div>
+                <div className="grid-item text-item">Text for Item 2</div>
             </div>
         </body>
     );
