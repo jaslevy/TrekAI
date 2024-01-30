@@ -5,6 +5,7 @@ import img1 from '../images/Hills_and_mountains_in_autumn_(Unsplash).jpg'
 import map from '../images/Group 4.png'
 import saved from '../images/Group 5.png'
 import weather from '../images/weather.png'
+import night from '../images/nightSky.png'
 import '../styles/landing.css'
 function Landing() {
      // Catchphrase typing effect states
@@ -124,15 +125,22 @@ function Landing() {
             <div className="grid-container">
                 <div className="grid-item">
                     <h3>Saved Trips</h3>
-                    <div className='text-item'>
-                        <p>Access your previously generated trips to view itineraries, </p>
-                    </div>
+                    <p>Explore, share, and revisit your adventures with TrekAI's Saved Trips. Access, share, or print your detailed itineraries, ensuring your valuable trip plans are always within reach.</p>
                 </div>
-                <div className="grid-item photo-item"><img src={saved} alt="Description 1" /></div>
-                <div className="grid-item photo-item"><img src={weather} alt="Description 2" /></div>
-                <div className="grid-item text-item">
-                    <h3>Real-Time and Historical Weather </h3>
-                    <p></p>
+                <div className="grid-item photo-item"><img src={saved} alt="Saved Trips" /></div>
+                <div className="grid-item photo-item"><img src={weather} alt="Weather" /></div>
+                <div className="grid-item">
+                    <h3>Real-Time and Historical Weather</h3>
+                    <p>TrekAI delivers precise, real-time weather updates and historical trends, including precipitation, cloud coverage, and temperature. Plan and hike confidently with essential insights at your fingertips.</p>
+                </div>
+            </div>
+            <div className="subtitles">Interact With Your Itinerary</div>
+            <div className="img2-container">
+                <img src={night} alt="backdrop" />
+                <div className="overlay-text-2">
+                    <h3>Contact Us</h3>
+                   <p>We love hearing from our users! Whether you have a question, feedback, or need support, our team is here to help. Reach out to us, and we'll ensure your TrekAI experience is nothing short of amazing.</p>
+                   <button className="button-style">Contact</button>
                 </div>
             </div>
         </body>

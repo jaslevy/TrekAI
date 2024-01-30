@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './pages/landing.js';
+import '../src/styles/App.css'
 
 
 function App() {
@@ -22,9 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
           </Routes>
-          <div class="acknowledgment">
-             © 2023 inspired by <a href="https://www.tedsumers.info" target="_blank" rel="noopener noreferrer">Ted Sumers Site</a> and designs are from <a href="https://patakk.tumblr.com" target="_blank" rel="noopener noreferrer">PATAKK on Tumblr</a>.
-           </div>
+          <div className="acknowledgement">© 2023 TrekAI.</div>
     </Router>
   )
 }

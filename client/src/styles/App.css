@@ -6,3 +6,8 @@
   margin-top: 0;           /* Ensure no margin at the top */
 }
 
+.acknowledgement {
+  position: bottom;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+}
