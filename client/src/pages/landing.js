@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import logo from '../images/TREK AI LOGO.svg'
 import img1 from '../images/Hills_and_mountains_in_autumn_(Unsplash).jpg'
 import map from '../images/Group 4.png'
+import saved from '../images/Group 5.png'
+import weather from '../images/weather.png'
 import '../styles/landing.css'
 function Landing() {
      // Catchphrase typing effect states
@@ -69,6 +71,14 @@ function Landing() {
      }, [currentLetterIndex, currentPhraseIndex, isDeletingCatchphrase, phrases]);
     return (
         <body>
+             <nav className="navbar">
+                <img src={logo} alt="TREKAI LOGO" className="navbar-logo"/>
+                <div className="navbar-links">
+                    <a href="/signin" className="navbar-link">Log In</a>
+                    <a href="/login" className="navbar-link">Sign Up</a>
+                    <a href="/contact" className="navbar-link">Contact</a>
+                </div>
+            </nav>
             <div className="landing-top-container">
                 <img src={logo} alt="TREKAI LOGO" width="250" height="auto" />
             </div>
@@ -112,10 +122,18 @@ function Landing() {
             </div>
             <div className="subtitles">Adventure Awaits</div>
             <div className="grid-container">
-                <div className="grid-item text-item">Text for Item 1</div>
-                <div className="grid-item photo-item"><img src={map} alt="Description 1" /></div>
-                <div className="grid-item photo-item"><img src={map} alt="Description 2" /></div>
-                <div className="grid-item text-item">Text for Item 2</div>
+                <div className="grid-item">
+                    <h3>Saved Trips</h3>
+                    <div className='text-item'>
+                        <p>Access your previously generated trips to view itineraries, </p>
+                    </div>
+                </div>
+                <div className="grid-item photo-item"><img src={saved} alt="Description 1" /></div>
+                <div className="grid-item photo-item"><img src={weather} alt="Description 2" /></div>
+                <div className="grid-item text-item">
+                    <h3>Real-Time and Historical Weather </h3>
+                    <p></p>
+                </div>
             </div>
         </body>
     );

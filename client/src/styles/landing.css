@@ -1,9 +1,13 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 .landing-top-container {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center;     /* Center vertically */
     height: 20vh;          
-    margin-top: 10px;           
+    margin-top: 80px;           
 }
 
 .body {
@@ -37,7 +41,7 @@
 
 .img1-container {
     width: 65%;
-    height: 570px; /* Set a fixed height to crop the image */
+    height: 500px; /* Set a fixed height to crop the image */
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -197,16 +201,14 @@
     grid-template-columns: 1fr 1fr; /* Two columns of equal width */
     grid-template-rows: auto auto; /* Two rows, height set automatically based on content */
     gap: 20px; /* Space between grid items */
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 20% ;
 }
   
 .grid-item {
     padding: 10px; /* Padding inside each grid item */
-}
-  
-.text-item {
-    /* Additional styling for text items if needed */
+    justify-content: center;
 }
   
 .photo-item img {
@@ -215,3 +217,43 @@
     border-radius: 10px; /* Optional: rounded corners for images */
 }
   
+.text-item {
+    display: flex;
+    align-items: center; /* Vertically aligns the content to the center */
+    justify-content: center; /* Horizontally aligns the content to the center */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc; /* Add a border at the bottom with a light gray color */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-links {
+    display: flex; /* Align links horizontally */
+    align-items: center;
+    gap: 20px; /* Spacing between links */
+}
+
+.navbar-link {
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar-link:hover {
+    color: #000; /* Text color on hover */
+}
+  
+.navbar-logo {
+    height: 50px; /* Adjust as needed */
+}
