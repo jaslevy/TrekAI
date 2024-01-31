@@ -41,7 +41,7 @@
 
 .img1-container {
     width: 65%;
-    height: 500px; /* Set a fixed height to crop the image */
+    height: auto;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -71,7 +71,7 @@
 
 .button-container {
     position: absolute;
-    top: 70%; /* Adjust this value as needed to position below the text */
+    top: 67%; /* Adjust this value as needed to position below the text */
     left: 50%;
     transform: translateX(-50%);
     display: flex; /* To layout buttons horizontally */
@@ -309,13 +309,20 @@
   /* Container for the overlay content */
 .overlay-text-2 {
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     width: 100%;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     color: white; /* White text */
     font-size: 32px; /* Adjust as needed */
     font-weight: 700;
+    padding-left: 5%;
+    padding-right: 5%
+}
+
+.overlay-text-2 h3 {
+    text-align: cenleftleftter;
+    padding: 0px;
 }
 
 .button-container-2 {

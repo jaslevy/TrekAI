@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef } from 'react';
 import logo from '../images/TREK AI LOGO.svg'
-import img1 from '../images/Hills_and_mountains_in_autumn_(Unsplash).jpg'
+import img1 from '../images/moose.jpg'
 import map from '../images/Group 4.png'
 import saved from '../images/Group 5.png'
 import weather from '../images/weather.png'
-import night from '../images/nightSky.png'
+import night from '../images/sunset_minimal_landscape_4k.jpg'
 import '../styles/landing.css'
 function Landing() {
      // Catchphrase typing effect states
@@ -134,7 +134,6 @@ function Landing() {
                     <p>TrekAI delivers precise, real-time weather updates and historical trends, including precipitation, cloud coverage, and temperature. Plan and hike confidently with essential insights at your fingertips.</p>
                 </div>
             </div>
-            <div className="subtitles">Interact With Your Itinerary</div>
             <div className="img2-container">
                 <img src={night} alt="backdrop" />
                 <div className="overlay-text-2">
