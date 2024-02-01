@@ -23,7 +23,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
           </Routes>
-          <div className="acknowledgement">© 2023 TrekAI.</div>
     </Router>
   )
 }

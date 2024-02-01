@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef } from 'react';
+import Navbar from '../components/landingnav.js';
 import logo from '../images/TREK AI LOGO.svg'
 import img1 from '../images/moose.jpg'
 import map from '../images/Group 4.png'
@@ -71,15 +72,9 @@ function Landing() {
          return () => clearTimeout(timer);
      }, [currentLetterIndex, currentPhraseIndex, isDeletingCatchphrase, phrases]);
     return (
+        
         <body>
-             <nav className="navbar">
-                <img src={logo} alt="TREKAI LOGO" className="navbar-logo"/>
-                <div className="navbar-links">
-                    <a href="/signin" className="navbar-link">Log In</a>
-                    <a href="/login" className="navbar-link">Sign Up</a>
-                    <a href="/contact" className="navbar-link">Contact</a>
-                </div>
-            </nav>
+             <Navbar />
             <div className="landing-top-container">
                 <img src={logo} alt="TREKAI LOGO" width="250" height="auto" />
             </div>
@@ -119,7 +114,7 @@ function Landing() {
             </div>
             <div className="subtitles">Interact With Your Itinerary</div>
             <div className="map-container">
-                <img src={map} alt="TREKAI MAP" width="800" height="auto" />
+                <img src={map} alt="TREKAI MAP" width="80%" height="80%" />
             </div>
             <div className="subtitles">Adventure Awaits</div>
             <div className="grid-container">
@@ -139,7 +134,9 @@ function Landing() {
                 <div className="overlay-text-2">
                     <h3>Contact Us</h3>
                    <p>We love hearing from our users! Whether you have a question, feedback, or need support, our team is here to help. Reach out to us, and we'll ensure your TrekAI experience is nothing short of amazing.</p>
-                   <button className="button-style">Contact</button>
+                    <a href="mailto:jglevy@princeton.edu" target="_top">
+                    <button className="button-style">Contact</button>
+                    </a>
                 </div>
             </div>
         </body>
