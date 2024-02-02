@@ -9,8 +9,8 @@ const LandingNavbar = () => {
       <img src={logo} alt="TREKAI LOGO" className="navbar-logo"/>
       </a>
       <div className={'navbar-links'}>
-        <a href="/signin" className="navbar-link">Log In</a>
-        <a href="/login" className="navbar-link">Sign Up</a>
+        <a href="/login" className="navbar-link">Log In</a>
+        <a href="/signup" className="navbar-link">Sign Up</a>
         <a href="mailto:jglevy@princeton.edu" target="_top" className="navbar-link">Contact</a>
       </div>
     </nav>

@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './pages/landing.js';
-import '../src/styles/App.css'
+import Signup from './pages/signup.js';
+import Login from './pages/login.js';
+import '../src/styles/App.css';
 
 
 function App() {
@@ -19,11 +21,16 @@ function App() {
 
   }, [])
   return (
+    <div>
     <Router>
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
     </Router>
+    <div className="acknowledgement" style={{ textAlign: 'center' }}>© 2023 TrekAI.</div>
+    </div>
   )
 }
 
