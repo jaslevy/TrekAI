@@ -1,6 +1,7 @@
 # TrekAI
 
 TrekAI is an innovative travel recommendation web application that combines natural language processing, real-time weather data, and cutting-edge technologies to deliver an exceptional user experience.
+Pre-Launch is deployed here: https://trekai-beta-landing.vercel.app/
 
 ## Technologies Used
 
