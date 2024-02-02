@@ -20,6 +20,7 @@ TrekAI is an innovative travel recommendation web application that combines natu
 - Python
 - Flask
 - AWS CLI (optional for deploying to AWS)
+- Tailwind CLI
 
 ### Installation
 
