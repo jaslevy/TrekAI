@@ -14,7 +14,7 @@ function Landing() {
      const [isDeletingCatchphrase, setIsDeletingCatchphrase] = useState(false);
      const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
      const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
-     const phrases = ['tailored.', 'travelled.', 'completed.']; // Phrases for the catchphrase
+     const phrases = ['tailored.']; // Phrases for the catchphrase
  
      // Typing effect for the long paragraph
      const [displayedText, setDisplayedText] = useState('');
