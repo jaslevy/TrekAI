@@ -78,7 +78,7 @@ function Landing() {
             <div className="landing-top-container">
                 <img src={logo} alt="TREKAI LOGO" width="250" height="auto" />
             </div>
-            <div className="catchphrase"> Your trail, {catchphrase}</div>
+            <div className="catchphrase"> Your Trail, Tailored</div>
             <div className="img1-container">
                 <img src={img1} alt="backdrop" />
                 <div className="overlay-text">Embark on unforgettable journeys with TrekAI: your personal guide to the world's most breathtaking trails, customized to fit your budget and hiking dreams. Where your next adventure awaits, tailored just for you.</div>

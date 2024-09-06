@@ -28,11 +28,6 @@
     font-weight: 800;
 }
 
-.catchphrase::after {
-    content: '|';
-    opacity: 1;
-    animation: blink 1s infinite;
-}
   
 @keyframes blink {
   50% { opacity: 0; }
